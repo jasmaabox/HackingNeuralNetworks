@@ -15,7 +15,7 @@ from scipy import misc
 
 
 # Load the Model 
-model = keras.models.load_model('1_Backdooring/model.h5')
+model = keras.models.load_model('1_Backdooring/model_mod.h5')
 
 # Sanity Check all 10 digits, if the model can still understand these
 for i in range(10):

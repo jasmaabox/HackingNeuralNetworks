@@ -21,7 +21,7 @@ for yy in range(28):
         processedImage[0][xx][yy][0] = float(image[xx][yy]) / 255
 
 # Load the Model 
-model = keras.models.load_model('0_LastLayerAttack/model.h5')
+model = keras.models.load_model('0_LastLayerAttack/model_mod.h5')
 
 # Run the Model and check what Digit was shown
 shownDigit = np.argmax(model.predict(processedImage))
